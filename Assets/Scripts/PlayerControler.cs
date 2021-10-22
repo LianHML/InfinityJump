@@ -17,12 +17,20 @@ public class PlayerControler : MonoBehaviour
 
     void Start()
     {
+        Application.targetFrameRate = 60;
         Player = GetComponent<Rigidbody2D>();    
     }
     void Update()
     {
-        moveInput = Input.GetAxis("Horizontal");
-        Player.velocity = new Vector2(moveInput * Speed, Player.velocity.y);
+        Vector3 dir = Vector3.zero;
+        //moveInput = Input.GetAxis("Horizontal");
+        //Player.velocity = new Vector2(moveInput * Speed, Player.velocity.y);
+        dir.x = -Input.acceleration.y;
+        dir.z = Input.acceleration.x;
+        if (dir.sqrMagnitude > 1)
+            dir.Normalize();
+        dir *= Time.deltaTime;
+        transform.Translate(dir * Speed);
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
