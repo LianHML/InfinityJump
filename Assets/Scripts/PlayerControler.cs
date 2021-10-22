@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControler : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class PlayerControler : MonoBehaviour
 
     private float moveInput;
     [SerializeField] private float Speed;
+
+    private int currentScore;
+    [SerializeField] private Text scoreText;
 
 
     void Start()
@@ -30,10 +34,24 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Platform")
-        { Time.timeScale = 0.9f; }
+        { 
+            Time.timeScale = 0.9f; 
+        }
+
+        if (collision.gameObject.tag == "Score")
+        {
+            GainScore();
+        }
+    }
+
+    void GainScore()
+    {
+        currentScore++;
+        scoreText.text = "Score: " + currentScore;
     }
 
     private void OnTriggerExit2D(Collider2D collision)

@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 2632477384960029529}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Platform
+  m_TagString: Score
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
