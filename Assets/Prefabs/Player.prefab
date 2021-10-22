@@ -5117,3 +5117,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 8236778407212096542}
   JumpForce: 8
+  Speed: 1500
+  scoreText: {fileID: 0}

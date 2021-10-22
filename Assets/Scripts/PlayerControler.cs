@@ -24,7 +24,7 @@ public class PlayerControler : MonoBehaviour
     {
         Vector3 dir = Vector3.zero;
         //moveInput = Input.GetAxis("Horizontal");
-        //Player.velocity = new Vector2(moveInput * Speed, Player.velocity.y);
+        //
         //dir.y = -Input.acceleration.y;
         dir.x = Input.acceleration.x;
         if (dir.sqrMagnitude > 1)
@@ -41,7 +41,16 @@ public class PlayerControler : MonoBehaviour
            
         }
     }
-
+    public void Right()
+    {
+        Player.velocity = new Vector2(1 * Speed, Player.velocity.y);
+        return;
+    }
+    public void Left()
+    {
+        Player.velocity = new Vector2(-1 * Speed, Player.velocity.y);
+        return;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
