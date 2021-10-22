@@ -109,7 +109,7 @@ MonoBehaviour:
   - {fileID: 2312691182179546689}
   - {fileID: 9113516098405974071}
   - {fileID: 476630169886929810}
-  speed: {x: 0, y: -4}
+  speed: {x: 0, y: -5}
   Hight: 4
   randomWidth: {x: 2.5, y: -2.5}
 --- !u!1 &5955900474887793215
@@ -231,8 +231,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 4333825311504258382}
     m_Modifications:
     - target: {fileID: 1319152054, guid: d25d4f9f4833064429004ef74b8b6677, type: 3}
+      propertyPath: Speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319152054, guid: d25d4f9f4833064429004ef74b8b6677, type: 3}
       propertyPath: JumpForce
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6986971364563164238, guid: d25d4f9f4833064429004ef74b8b6677, type: 3}
       propertyPath: m_SortingOrder
@@ -300,7 +304,7 @@ PrefabInstance:
       objectReference: {fileID: 6200000, guid: 0ce41f04d9c00d948a432e892c277602, type: 2}
     - target: {fileID: 8236778407212096542, guid: d25d4f9f4833064429004ef74b8b6677, type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d25d4f9f4833064429004ef74b8b6677, type: 3}
@@ -330,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5999365125079067473, guid: afe2ab3dbbd737e478da44d81ae50fbe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -4.6
       objectReference: {fileID: 0}
     - target: {fileID: 5999365125079067473, guid: afe2ab3dbbd737e478da44d81ae50fbe, type: 3}
       propertyPath: m_LocalPosition.z

@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScrollPlataform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5804015392433440798, guid: bf77a0ccb0d692b42871b049c585318e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf77a0ccb0d692b42871b049c585318e, type: 3}
 --- !u!4 &6787666513070590434 stripped
@@ -274,6 +278,10 @@ PrefabInstance:
     - target: {fileID: 5804015392433440798, guid: bf77a0ccb0d692b42871b049c585318e, type: 3}
       propertyPath: m_Name
       value: ScrollPlataform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804015392433440798, guid: bf77a0ccb0d692b42871b049c585318e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf77a0ccb0d692b42871b049c585318e, type: 3}
