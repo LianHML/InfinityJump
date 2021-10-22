@@ -25,8 +25,8 @@ public class PlayerControler : MonoBehaviour
         Vector3 dir = Vector3.zero;
         //moveInput = Input.GetAxis("Horizontal");
         //Player.velocity = new Vector2(moveInput * Speed, Player.velocity.y);
-        dir.x = -Input.acceleration.y;
-        dir.z = Input.acceleration.x;
+        //dir.y = -Input.acceleration.y;
+        dir.x = Input.acceleration.x;
         if (dir.sqrMagnitude > 1)
             dir.Normalize();
         dir *= Time.deltaTime;
